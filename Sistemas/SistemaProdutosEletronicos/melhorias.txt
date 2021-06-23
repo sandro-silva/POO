@@ -1,1 +1,1 @@
-Descrever funcionalidades no Readme.md; Acrescentar mais funcionalidades para o sistema: - Cadastrar diferentes tipos de produtos - Fazer diferentes tipos de pesquisa - Fazer com que o teste exercite mais funcionalidades do sistema. 
+Descrever funcionalidades no Readme.md - Acrescentar mais funcionalidades para o sistema: - Cadastrar diferentes tipos de produtos - Fazer diferentes tipos de pesquisa - Fazer com que o teste exercite mais funcionalidades do sistema. 

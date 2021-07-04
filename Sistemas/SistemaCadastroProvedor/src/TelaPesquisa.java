@@ -1,4 +1,4 @@
-package aluno;
+package br.ufpb.dcx.SistemaCadastroProvedor;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -36,7 +36,7 @@ public class TelaPesquisa extends JFrame {
 	JLabel txBairro =new JLabel("Bairro:");
 	JLabel txSenha =new JLabel("Senha Wifi:");
 	JLabel txDataNascimento =new JLabel("Data de Nasc:");
-	JLabel txDataInstalacao =new JLabel("Data de InstalaÁ„o");
+	JLabel txDataInstalacao =new JLabel("Data de Instala√ß√£o");
 	
 	JTextField cxCodigoConsulta = new JTextField();
 	JTextField cxNomeConsulta = new JTextField();
@@ -79,32 +79,32 @@ public class TelaPesquisa extends JFrame {
 		//                        ED  SD  TH  TV	
 		txCodigoConsulta.setBounds(70,30,146, 14);// "Digite seu nome"
 		add(txCodigoConsulta);
-		cxCodigoConsulta.setBounds(70,50,100,23);//tamanho e posiÁ„o caixa de texto 
+		cxCodigoConsulta.setBounds(70,50,100,23);//tamanho e posi√ß√£o caixa de texto 
 		add(cxCodigoConsulta);
 		
 		txNomeConsulta.setBounds(195,30,146, 14);// "Digite seu nome"
 		add(txNomeConsulta);// faz aparecer o texto aacima da caixa de texto
-		cxNomeConsulta.setBounds(190,50,330,23);//tamanho e posiÁ„o caixa de texto 
+		cxNomeConsulta.setBounds(190,50,330,23);//tamanho e posi√ß√£o caixa de texto 
 		add(cxNomeConsulta);
 		
-		cxCodigo.setBounds(50,50,100,23);//tamanho e posiÁ„o caixa de texto 
+		cxCodigo.setBounds(50,50,100,23);//tamanho e posi√ß√£o caixa de texto 
 		add(cxCodigo);
 		txCodigo.setBounds(80,80,146, 14);// "Digite seu nome"
 		add(txCodigo);
 		
-		cxNome.setBounds(190,50,330,23);//tamanho e posiÁ„o caixa de texto 
+		cxNome.setBounds(190,50,330,23);//tamanho e posi√ß√£o caixa de texto 
 		add(cxNome);
-		cxCodigo.setBounds(70,100,100,23);//tamanho e posiÁ„o caixa de texto 
+		cxCodigo.setBounds(70,100,100,23);//tamanho e posi√ß√£o caixa de texto 
 		add(cxCodigo);
 		
 		txNome.setBounds(195,80,146, 14);// "Digite seu nome"
 		add(txNome);// faz aparecer o texto aacima da caixa de texto
-		cxNome.setBounds(190,100,330,23);//tamanho e posiÁ„o caixa de texto 
+		cxNome.setBounds(190,100,330,23);//tamanho e posi√ß√£o caixa de texto 
 		add(cxNome);
 		
 		txTelefone.setBounds(80,130,146, 14);//Digite nome a consultar
 		add(txTelefone);
-		cxTelefone.setBounds(70,150,200,23);//tamanho e posiÁ„o caixa de texto 
+		cxTelefone.setBounds(70,150,200,23);//tamanho e posi√ß√£o caixa de texto 
 		add(cxTelefone);
 		
 		txCpf.setBounds(330,130,146, 14);//Digite nome a consultar
@@ -119,7 +119,7 @@ public class TelaPesquisa extends JFrame {
 		
 		txSenha.setBounds(410,180,146,14);//Digite nome a consultar
 		add(txSenha);
-		cxSenha.setBounds(370,200,150,23);//tamanho e posiÁ„o caixa de texto 
+		cxSenha.setBounds(370,200,150,23);//tamanho e posi√ß√£o caixa de texto 
 		add(cxSenha);
 		
 		txRua.setBounds(80,230,146, 14);//Digite nome a consultar
@@ -129,7 +129,7 @@ public class TelaPesquisa extends JFrame {
 		
 		txNumero.setBounds(440,230,146,14);//Digite nome a consultar
 		add(txNumero);
-		cxNumero.setBounds(430,250,90,23);//tamanho e posiÁ„o caixa de texto 
+		cxNumero.setBounds(430,250,90,23);//tamanho e posi√ß√£o caixa de texto 
 		add(cxNumero);
 		
 		txBairro.setBounds(80,280,140, 14);//Digite nome a consultar
@@ -148,7 +148,7 @@ public class TelaPesquisa extends JFrame {
 		add(cxDataInstalacao);
 		
 		
-		botaoPesquisa.setBounds(385,350,130,23);//bot„o pesquisar
+		botaoPesquisa.setBounds(385,350,130,23);//bot√£o pesquisar
 		add(botaoPesquisa);
 		
 		
@@ -156,7 +156,7 @@ public class TelaPesquisa extends JFrame {
 			String nomeContato = new String(cxNomeConsulta.getText());//dentro da caixa de texto
 			Contato c = sisCadastro.pesquisaContato(nomeContato);
 			if (c == null) {
-			JOptionPane.showMessageDialog(null,"contato n„o encontrado" );	
+			JOptionPane.showMessageDialog(null,"contato n√£o encontrado" );	
 			}else {
 				JOptionPane.showMessageDialog(null,"contato encontrado"+c.toString() );
 				cxNome.setText(c.toString());

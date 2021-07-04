@@ -1,4 +1,4 @@
-package br.ufpb.dcx.SistemaCadastroProvedor;
+package br.ufpb.dcx.provedor;
 
 public class SistemaCadastroProvedor {
 

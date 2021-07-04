@@ -1,4 +1,4 @@
-package aluno;
+package br.ufpb.dcx.SistemaCadastroProvedor;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileInputStream;
@@ -33,7 +33,7 @@ public class Cadastro {   // varios contatos(quantidade, lista)
 	}
 	public boolean cadastraContato(Contato c) { //cadastro
 		if(this.pesquisaContato(c.getNome())==null) {//se pequisa contato passando o nome for igual nulo
-			this.contatos.add(c);                    //se n„o tiver o nome adicione e retorne true 
+			this.contatos.add(c);                    //se n√£o tiver o nome adicione e retorne true 
 			return true;
 		} else {
 			return false;

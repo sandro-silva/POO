@@ -1,4 +1,4 @@
-package aluno;
+package br.ufpb.dcx.SistemaCadastroProvedor;
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
@@ -35,7 +35,7 @@ public class TelaCadastro extends JFrame implements ActionListener {
 	JLabel txBairro =new JLabel("Bairro:");
 	JLabel txSenha =new JLabel("Senha Wifi:");
 	JLabel txDataNascimento =new JLabel("Data de Nasc:");
-	JLabel txDataInstalacao =new JLabel("Data de InstalaÁ„o");
+	JLabel txDataInstalacao =new JLabel("Data de Instala√ß√£o");
 	
 	JTextField cxCodigo = new JTextField();
 	JTextField cxNome = new JTextField(); //caixa de texto
@@ -49,18 +49,18 @@ public class TelaCadastro extends JFrame implements ActionListener {
 	JTextField cxDataNascimento = new JTextField();
 	JTextField cxDataInstalacao = new JTextField();
 	
-	JButton botaoCadastrar = new JButton("Adicionar Cliente"); // nome no bot„o (ok)
+	JButton botaoCadastrar = new JButton("Adicionar Cliente"); // nome no bot√£o (ok)
 	//JButton botaoPesquisa = new JButton("Salvar");
 	JPanel panel = new JPanel();
 	
 	public TelaCadastro  (Cadastro sisCadastro) { // menu ou caixa  construtor
 		setTitle("cadastro");
-		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);//fecha sÛ a janela atual
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);//fecha s√≥ a janela atual
 		//setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//fecha tudo
-		//setBounds(50,300,600,630);//posiÁ„o, (size)tamanho(largura , altura); da janela
-		setSize(610,450);//sÛ tamanho
-		setLocation(350,150);//sÛ posiÁ„o da janela
-		//setLocationRelativeTo(null);//centralizar posiÁ„o da janela
+		//setBounds(50,300,600,630);//posi√ß√£o, (size)tamanho(largura , altura); da janela
+		setSize(610,450);//s√≥ tamanho
+		setLocation(350,150);//s√≥ posi√ß√£o da janela
+		//setLocationRelativeTo(null);//centralizar posi√ß√£o da janela
 		
 		this.sisCadastro =  sisCadastro;
 		//----------------------------------------------------
@@ -75,17 +75,17 @@ public class TelaCadastro extends JFrame implements ActionListener {
 		//               ED  SD  TH  TV	
 		txCodigo.setBounds(80, 30,146, 14);// "Digite seu nome"
 		panel.add(txCodigo);
-		cxCodigo.setBounds(70,50,100,23);//tamanho e posiÁ„o caixa de texto 
+		cxCodigo.setBounds(70,50,100,23);//tamanho e posi√ß√£o caixa de texto 
 		panel.add(cxCodigo);
 		
 		txNome.setBounds(195, 30,146, 14);// "Digite seu nome"
 		panel.add(txNome);// faz aparecer o texto aacima da caixa de texto
-		cxNome.setBounds(190,50,330,23);//tamanho e posiÁ„o caixa de texto 
+		cxNome.setBounds(190,50,330,23);//tamanho e posi√ß√£o caixa de texto 
 		panel.add(cxNome);
 		
 		txTelefone.setBounds(80,80,146, 14);//Digite nome a consultar
 		panel.add(txTelefone);
-		cxTelefone.setBounds(70,100,200,23);//tamanho e posiÁ„o caixa de texto 
+		cxTelefone.setBounds(70,100,200,23);//tamanho e posi√ß√£o caixa de texto 
 		panel.add(cxTelefone);
 		
 		txCpf.setBounds(330,80,146, 14);//Digite nome a consultar
@@ -105,7 +105,7 @@ public class TelaCadastro extends JFrame implements ActionListener {
 		
 		txNumero.setBounds(440,180,146,14);//Digite nome a consultar
 		panel.add(txNumero);
-		cxNumero.setBounds(430,200,90,23);//tamanho e posiÁ„o caixa de texto 
+		cxNumero.setBounds(430,200,90,23);//tamanho e posi√ß√£o caixa de texto 
 		panel.add(cxNumero);
 		
 		txBairro.setBounds(80,230,140, 14);//Digite nome a consultar
@@ -115,7 +115,7 @@ public class TelaCadastro extends JFrame implements ActionListener {
 		
 		txSenha.setBounds(410,130,146,14);//Digite nome a consultar
 		panel.add(txSenha);
-		cxSenha.setBounds(370,150,150,23);//tamanho e posiÁ„o caixa de texto 
+		cxSenha.setBounds(370,150,150,23);//tamanho e posi√ß√£o caixa de texto 
 		panel.add(cxSenha);
 
 		txDataNascimento.setBounds(280,230,146, 14);//Digite nome a consultar
@@ -160,7 +160,7 @@ public class TelaCadastro extends JFrame implements ActionListener {
 			JOptionPane.showMessageDialog(null,"foi adicionado " + contato.getNome());
 			
 		}else {
-			JOptionPane.showMessageDialog(null, contato.getNome()+" J· Existe ");
+			JOptionPane.showMessageDialog(null, contato.getNome()+" J√° Existe ");
 		}
 		cxNome.setText("");//limpa caixa
 	}

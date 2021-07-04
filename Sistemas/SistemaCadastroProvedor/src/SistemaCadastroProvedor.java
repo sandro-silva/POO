@@ -1,4 +1,4 @@
-package aluno;
+package br.ufpb.dcx.SistemaCadastroProvedor;
 
 public class SistemaCadastroProvedor {
 
@@ -30,7 +30,7 @@ public class SistemaCadastroProvedor {
 
 
 
-/*JButton b = new JButton("ok"); // nome no bot„o ok
+/*JButton b = new JButton("ok"); // nome no bot√£o ok
 BotaoAction action = new BotaoAction();
 b.addActionListener(action);
 p.add(b);

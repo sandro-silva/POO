@@ -1,4 +1,4 @@
-package aluno;
+package br.ufpb.dcx.SistemaCadastroProvedor;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.AbstractAction;
@@ -20,10 +20,10 @@ public class BotaoAction extends AbstractAction{
 		boolean cadastrou = sisCadastro.cadastraContato(c);
 		//........................................................
 		if(sisCadastro.cadastraContato(c) == true) {
-			System.out.println(" j· tem");
+			System.out.println(" j√° tem");
 		}else {
-			System.out.println("n„o tem");
-			//JOptionPane.showMessageDialog(null,"Contato Ainda N„o tem  ");
+			System.out.println("n√£o tem");
+			//JOptionPane.showMessageDialog(null,"Contato Ainda N√£o tem  ");
 		}
 		//........................................................
 		JOptionPane.showMessageDialog(null,"foi adicionado " + nome.getText());//boolean
@@ -39,5 +39,5 @@ public class BotaoAction extends AbstractAction{
 		// digitar o nome a pesquisar
 		//JOptionPane.showMessageDialog(null, sisCadastro.pesquisaContato(nomeContato));
 		// pesquisa acima
-		//System.out.println("ol·  "+ c.getNome().toString());
+		//System.out.println("ol√°  "+ c.getNome().toString());
         // terminal

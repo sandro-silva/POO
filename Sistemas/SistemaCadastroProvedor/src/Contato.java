@@ -1,4 +1,4 @@
-package aluno;
+package br.ufpb.dcx.SistemaCadastroProvedor;
 
 public class Contato {           // um contato 
 	private String nome;

@@ -93,8 +93,8 @@ public class Cadastro {   // varios contatos(quantidade, lista)
 		BufferedWriter escritor = null;
 		try {
 								
-				FileWriter criadorDeArquios = new FileWriter("arquivo.txt");//
-				escritor = new BufferedWriter(criadorDeArquios);
+				FileWriter criadorDeArquivos = new FileWriter("arquivo.txt");//
+				escritor = new BufferedWriter(criadorDeArquivos);
 				for(String s:pTextoAEscrever ) {
 					escritor.write(s+"\n");
 					

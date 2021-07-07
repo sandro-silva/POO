@@ -88,7 +88,7 @@ public class TelaPrincipal extends JFrame{
 		
 		
 		JLabel linha1, linha2;
-			ImageIcon eletroImg = new ImageIcon("./imgs/Image1.jpg");
+			ImageIcon provedorImg = new ImageIcon("./imgs/Image1.jpg");
 		    	setTitle("Provedor");
 		        setSize(1600,1200); //tamanho da janela
 		        setLocation(0, 0);
@@ -97,7 +97,7 @@ public class TelaPrincipal extends JFrame{
 		        linha1 = new JLabel("Provedor", JLabel.CENTER);
 		        linha1.setForeground(Color.black);
 		        linha1.setFont(new Font("Serif", Font.BOLD, 24));
-		        linha2 = new JLabel(eletroImg, JLabel.CENTER);
+		        linha2 = new JLabel(provedorImg, JLabel.CENTER);
 		        getContentPane().setLayout(new GridLayout(3,1));
 		        getContentPane().add(linha1);
 		        getContentPane().add(linha2);

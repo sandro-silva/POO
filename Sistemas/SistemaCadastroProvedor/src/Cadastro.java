@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Cadastro {   // v·rios contatos(quantidade, lista)
+public class Cadastro {   // v√°rios contatos(quantidade, lista)
 	private List<Contato> contatos;        //  array de contato      
 	private static BufferedReader br;
 	
@@ -34,7 +34,7 @@ public class Cadastro {   // v·rios contatos(quantidade, lista)
 	}
 	public boolean cadastraContato(Contato c) { //cadastro
 		if(this.pesquisaContato(c.getNome())==null) {//se pesquisa contato passando o nome for igual nulo
-			this.contatos.add(c);                    //se n„o tiver o nome adicione e retorne true 
+			this.contatos.add(c);                    //se n√£o tiver o nome adicione e retorne true 
 			return true;
 		} else {
 			return false;
@@ -42,7 +42,7 @@ public class Cadastro {   // v·rios contatos(quantidade, lista)
 		
 	}
 	public Contato pesquisaContato(String nomeContato) { //pesquisa
-		for (int k=0; k<this.contatos.size(); k++) { // varre os n˙meros de elementos
+		for (int k=0; k<this.contatos.size(); k++) { // varre os n√∫meros de elementos
 			Contato c = this.contatos.get(k);
 			if(c.getNome().equalsIgnoreCase(nomeContato)) {
 				return c;
@@ -55,8 +55,8 @@ public class Cadastro {   // v·rios contatos(quantidade, lista)
 	public List<String> lerLinhasDeArquivo() throws IOException {
 		List<String> linhasLidas = new ArrayList<String>();
 		try {
-			FileInputStream criadorDeArquios = new FileInputStream("arquivo.txt");
-			InputStreamReader input = new InputStreamReader(criadorDeArquios);
+			FileInputStream criadorDeArquivos = new FileInputStream("arquivo.txt");
+			InputStreamReader input = new InputStreamReader(criadorDeArquivos);
 			br = new BufferedReader(input);
 			
 			String linha;
@@ -89,7 +89,7 @@ public class Cadastro {   // v·rios contatos(quantidade, lista)
 		gravarTexto(dadosContatos);
 	}
 	
-	                 // nome mÈtodo         nome do arquivo        texto
+	                 // nome m√©todo         nome do arquivo        texto
 	public void gravarTexto(List<String> pTextoAEscrever) throws IOException {
 		BufferedWriter escritor = null;
 		try {						

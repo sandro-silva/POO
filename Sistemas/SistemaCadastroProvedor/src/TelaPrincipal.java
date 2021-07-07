@@ -96,7 +96,7 @@ public class TelaPrincipal extends JFrame{
 		        getContentPane().setBackground(Color.blue);
 		        linha1 = new JLabel("Provedor", JLabel.CENTER);
 		        linha1.setForeground(Color.black);
-		        linha1.setFont(new Font("Serif", Font.BOLD, 24));
+		        linha1.setFont(new Font("Serif", Font.BOLD, 36));
 		        linha2 = new JLabel(provedorImg, JLabel.CENTER);
 		        getContentPane().setLayout(new GridLayout(3,1));
 		        getContentPane().add(linha1);

@@ -20,10 +20,10 @@ public class TelaPrincipal extends JFrame{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	JPanel p = new JPanel();  // bot„o ok
+	JPanel p = new JPanel();  // bot√£o ok
 	JButton ok = new JButton("ok");
 	JPanel panel = new JPanel();//Jpanel(abas)
-	JMenuBar menuBar = new JMenuBar(); //barra menu  inst‚nciado
+	JMenuBar menuBar = new JMenuBar(); //barra menu  instanciado
 	JMenu arquivo = new JMenu("Arquivo");
 	JMenuItem itemCadastrar = new JMenuItem("Novo Cadastro"); //sub menu
 	JMenuItem itemPesquisar = new JMenuItem("Consulta Cadastro");
@@ -75,14 +75,14 @@ public class TelaPrincipal extends JFrame{
 			}
 		});
 		arquivo.add(itemPesquisar);
-		//------------------------aÁ„o menu item sair-----------------------------
-		itemSair.addActionListener(new ActionListener() { // aÁ„o pra sair
-			public void actionPerformed(ActionEvent e) { // qnd clicar no bot„o executa abaixo comando
+		//------------------------a√ß√£o menu item sair-----------------------------
+		itemSair.addActionListener(new ActionListener() { // a√ß√£o pra sair
+			public void actionPerformed(ActionEvent e) { // qnd clicar no bot√£o executa abaixo comando
 				System.exit(0);
 			}
 		}); 
 		arquivo.add(itemSair); 
-		//----------------------------aÁ„o bot„o sair-----------------------------
+		//----------------------------a√ß√£o bot√£o sair-----------------------------
 		menuBar.add(arquivo);
 		setJMenuBar(menuBar);
 		

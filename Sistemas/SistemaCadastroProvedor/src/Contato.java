@@ -10,6 +10,22 @@ public class Contato {           // um contato
 	private String senha;
 	private String dataNascimento;
 	private String dataInstalacao;
+	
+	public Contato (String nome,String telefone,String cpf,String cep, // construtor
+			String logradouro, String numero,String bairro,String senha,
+			String dataNascimento,String dataInstalacao ) {
+		
+		this.nome = nome;
+		this.telefone = telefone;
+		this.cpf = cpf;
+		this.cep = cep;
+		this.logradouro = logradouro;;
+		this.numero = numero;
+		this.bairro = bairro;
+		this.senha = senha;
+		this.dataNascimento = dataNascimento;
+		this.dataInstalacao = dataInstalacao;
+	}	
 
 	public Contato (String nome) {
 		this.nome = nome;           // construtor

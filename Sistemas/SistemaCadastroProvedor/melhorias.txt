@@ -1,1 +1,3 @@
-
+- Acrescentar mais funcionalidades para o sistema;
+- Fazer diferentes tipos de pesquisa; 
+- Fazer com que o teste exercite mais funcionalidades do sistema. 

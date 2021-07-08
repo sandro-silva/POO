@@ -17,6 +17,8 @@ import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
+
+import aluno.Contato;
 public class TelaCadastro extends JFrame implements ActionListener {
 	private ActionListener action;
 	private Cadastro sisCadastro ;
@@ -155,6 +157,16 @@ public class TelaCadastro extends JFrame implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 				
 		Contato contato = new Contato(cxNome.getText());//contato
+		contato.setTelefone(cxTelefone.getText());
+		contato.setCpf(cxCpf.getText()); 
+		contato.setCep(cxCep.getText());
+		contato.setLogradouro(cxRua.getText());
+		contato.setNumero(cxNumero.getText());
+		contato.setBairro(cxBairro.getText());
+		contato.setSenha(cxSenha.getText());
+		contato.setDataNascimento(cxDataNascimento.getText());
+		contato.setDataInstalacao(cxDataInstalacao.getText());
+		
 		boolean cadastrou = this.sisCadastro.cadastraContato(contato);//cadastro
 		if (cadastrou == true) { 
 			JOptionPane.showMessageDialog(null,"Foi adicionado " + contato.getNome());

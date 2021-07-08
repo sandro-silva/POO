@@ -5,7 +5,7 @@ public class SistemaCadastroProvedor {
 	public static void main(String[] args) {
 		Cadastro sisCadastro =  new Cadastro ();
 		TelaCadastro telaCadastro = new TelaCadastro(sisCadastro);
-		//telaCadastro.setVisible(true);
+		//telaCadastro.setVisible(true);oi
 		
 		TelaPrincipal  tela1 = new TelaPrincipal (sisCadastro,telaCadastro);
 		tela1.setVisible(true);

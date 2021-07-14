@@ -1,1 +1,1 @@
-O Projeto tem como objetivo gerar um sistema para cadastro de provedor de internet banda larga. As funcionalidades implementadas foram: cadastrar os clientes; salvar os clientes cadastrados; pesquisar clientes cadastrados filtrando pelo nome. 
+O Projeto tem como objetivo gerar um sistema para cadastro de provedor de internet banda larga. As funcionalidades implementadas foram: cadastrar os clientes; salvar os clientes cadastrados; salvar os dados dos clientes; pesquisar clientes cadastrados filtrando pelo nome; gravar texto em arquivo.txt. 
